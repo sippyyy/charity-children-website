@@ -1,0 +1,31 @@
+.section-3{
+    background-color: var(--rgba-background);
+    padding: var(--space-60);
+}
+
+.section-3__block{
+    width: 100%;
+
+    margin-bottom:8px ;
+}
+
+.section-3__block-cover{
+    background-color: rgba(255,255,255,0.2);
+    height: 150px;
+    border-radius: var(--border-radius);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-3__icon{
+    font-size: 2rem;
+    margin-bottom: var(--space-24);
+}
+
+.section-3__number{
+    font-size: 3rem;
+    font-family: var(--font-decor);
+
+}

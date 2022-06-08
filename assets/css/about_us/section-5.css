@@ -1,0 +1,48 @@
+.section-5{
+    background-image: url('../../img/second-sector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.section-5__cover{
+    background-color: var(--rgba-background);
+    height: 100%;
+    padding: var(--space-60)
+}
+
+.section-5__comment-block{
+    padding: var(--padding-30);
+    width: 257.333px !important;
+    background-color: var(--light-primary);
+}
+
+.section-5__comment{
+    margin-bottom: var(--space-24);
+}
+
+.section-5__talker{
+    display: flex;
+    align-items: center;
+}
+
+.section-5__talker-ava{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.section-5__talker-info{
+    padding-left: 16px;
+}
+
+.section-5__talker-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.section-5__talker-job{
+
+}

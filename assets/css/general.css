@@ -1,0 +1,38 @@
+.title{
+    color: #000;
+    margin-bottom: var(--space-24);
+    line-height: 2;
+}
+
+.tag{
+    color: var(--yellow-primary);
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.white{
+    color: #fff;
+}
+
+.yellow{
+    color: var(--yellow-primary);
+}
+
+.background-yellow{
+    background-color: var(--yellow-primary)
+}
+
+.opacity{
+    opacity:0.8;
+}
+
+.opacity-header{
+    opacity: 0.4
+}
+
+.section__title{
+    text-align: center;
+    margin-bottom: var(--space-48);
+}

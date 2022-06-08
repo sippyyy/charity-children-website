@@ -1,0 +1,32 @@
+.header{
+    position: absolute;
+    top: 10px;
+    height: 70px;
+    display: flex !important;
+    align-items: center;
+
+}
+
+.navbar{
+    display: flex !important;
+    justify-content: space-between;  
+    align-items: center;  
+}
+
+.nav__logo{
+    width:116px;
+}
+
+.nav__list{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav__list-item{
+    color: #fff;
+    font-family: 'Delius', cursive;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
