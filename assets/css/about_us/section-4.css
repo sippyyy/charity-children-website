@@ -5,6 +5,10 @@
     background-color: var(--light-primary);
 }
 
+.section-4__block{
+    margin-bottom: 15px;
+}
+
 
 .section-4__block-cover{
     width: 100%;

@@ -28,5 +28,6 @@
 .section-2__content-paragraph button{
     background: var(--primary);
     border: 1px solid var(--primary);
+    max-width: 120px;
 
 }
