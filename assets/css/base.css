@@ -26,7 +26,8 @@ html{
     --space-24: 24px;
     --space-60: 60px;
     --font-decor: 'Delius', cursive;
-    --rgba-background:rgba(4,38,40,0.75)
+    --rgba-background:rgba(4,38,40,0.75);
+    --text-color: #666666;
 }
 
 a{

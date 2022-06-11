@@ -1,9 +1,7 @@
-.home-section__blog{
+.section__blog{
     background-color: var(--light-primary);
 }
 
-.home-section__blog-cover{
+.section__blog-cover{
     padding: var(--space-60) 0;
 }
-
-

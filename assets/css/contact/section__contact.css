@@ -1,0 +1,81 @@
+.section__contact{
+    background-color: var(--light-primary);
+    padding: var(--space-60) 0;
+}
+
+
+.section__contact-container{
+    background-color: #fff;
+}
+
+.section__contact-map{
+    width: 100%;
+    max-height: 300px;
+}
+
+.section__contact-form-container{
+    padding: 30px;
+}
+
+.section__contact-form{
+
+}
+
+.form__title{
+    color: #000;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form__desc{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 1.34rem;
+    margin-bottom: var(--space-24);
+}
+
+.form__info{
+    
+}
+
+.form__info-cover{
+    margin-bottom: var(--space-24);
+}
+
+.form__key{
+    color: #000;
+    font-weight: 700;
+}
+
+.form__value{
+    font-weight: 500;
+}
+
+.form {
+
+} 
+
+.form__input-container {
+    margin-bottom: 10px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 6px 12px;
+}
+
+::placeholder{
+    color: rgba(0,0,0,0.4)
+}
+
+.form__textarea{
+    height: 200px;
+    width: 100%;
+    border-color: #6666;
+    padding: 6px 12px;
+    outline: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+}
+

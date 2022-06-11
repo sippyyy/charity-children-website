@@ -2,6 +2,14 @@
     background-color: var(--light-primary);
 }
 
+.section__blog{
+    background-color: #fff;
+}
+
+.section__blog-container{
+    padding: var(--space-60) 0;
+}
+
 .section__causes-container{
     padding: var(--space-60) 0;
     
@@ -40,11 +48,7 @@
 }
 
 .blog__title{
-    font-size: 1.5rem;
-    font-family: var(--font-decor);
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 16px;
+    font-size: 1.3rem;
 }
 
 .blog__content{

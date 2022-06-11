@@ -4,6 +4,14 @@
     line-height: 2;
 }
 
+.title-blog{
+    font-size: 1.5rem;
+    font-family: var(--font-decor);
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 16px;
+}
+
 .tag{
     color: var(--yellow-primary);
     font-size: 0.9rem;
@@ -47,4 +55,9 @@
 
 .button{
     border:none;
+}
+
+input{
+    border: 1px solid #6666;
+    outline: none;
 }
