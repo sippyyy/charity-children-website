@@ -21,12 +21,14 @@
     width: 45%;
     display: flex;
     justify-content: space-between;
+    
 
 }
 
 .nav__list-item{
-    color: #fff;
     font-family: 'Delius', cursive;
     font-weight: 600;
     font-size: 1.2rem;
+    color: rgba(255,255,255,0.5);
+
 }

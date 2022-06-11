@@ -22,6 +22,10 @@
     color: #fff;
 }
 
+.section__position{
+    text-transform: uppercase;
+}
+
 .section__page{
 
 }

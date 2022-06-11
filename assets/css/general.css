@@ -24,6 +24,10 @@
     background-color: var(--yellow-primary)
 }
 
+.background-primary{
+    background-color: var(--primary);
+}
+
 .opacity{
     opacity:0.8;
 }
