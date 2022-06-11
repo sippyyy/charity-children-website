@@ -1,3 +1,7 @@
+.section__article{
+    animation: flowOn linear 0.8s;
+}
+
 .section{
     background-image:url('../../img/first-sector.jpg');
     height: 400px;

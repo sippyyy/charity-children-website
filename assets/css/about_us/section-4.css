@@ -5,6 +5,17 @@
     background-color: var(--light-primary);
 }
 
+.section__title.volunteer__about-us{
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.section__title.volunteer__about-us.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .section-4__block{
     margin-bottom: 15px;
 }
@@ -14,6 +25,15 @@
     width: 100%;
     height: 300px;
     position: relative;
+    opacity: 0;
+    transform: rotateY(130deg) translateY(10%);
+    transition: all 0.8s linear;
+}
+
+.section-4__block-cover.active{
+    opacity:1;
+    transform: rotateY(0deg) translateY(0);
+    
 }
 
 .section-4__block-cover:hover .section-4__block-body{
@@ -31,13 +51,14 @@
 }
 
 .section-4__block-header img{
-    width: 130px;
-    height: 130px;
+    width: 140px;
+    height: 140px;
     border-radius: 100%;
     object-fit: cover;
     border: var(--border-ava) solid var(--light-primary);
     position: absolute;
-    left: 32%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
 }
 
@@ -49,6 +70,8 @@
     top: 20%;
     padding: 100px var(--padding-30) var(--padding-30) var(--padding-30);
     text-align: center;
+    transition: background-color 0.4s linear;
+
 }
 
 

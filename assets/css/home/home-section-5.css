@@ -10,6 +10,17 @@
     padding: var(--space-60) 0;
 }
 
+.home-section-5__container{
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.home-section-5__container.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .home-section-5__title{
     margin-bottom: var(--space-48)
 }

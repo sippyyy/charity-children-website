@@ -12,11 +12,23 @@
 
 .section__causes-container{
     padding: var(--space-60) 0;
-    
+    opacity: 0;
+    transform: translateY(20%);
+    transition: all 0.8s linear;
 }
+
+.section__causes-container.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .section__causes-block-cover{
     background-color: #e9e4db;
     margin-bottom: 16px;
+}
+
+.section__causes-block-cover:hover .blog__detail{
+    background-color: var(--yellow-primary);
 }
 
 .section__causes-block{
@@ -54,11 +66,13 @@
 .blog__content{
     font-size: 1.4rem;
     margin-bottom: 16px;
+    user-select: none;
 }
 
 .blog__detail{
     padding: 20px;
     background-color: #e0d8cb;
+    transition: background-color 0.4s linear;
 }
 
 .blog__money{
@@ -84,7 +98,7 @@ progress {
   
   ::-webkit-progress-bar {
     background-color: var(--light-primary);
-    height: 5px;
+    height: 8px;
     border-radius: var(--border-radius);
     overflow: hidden;
   }

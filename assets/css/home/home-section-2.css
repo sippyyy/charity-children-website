@@ -8,6 +8,14 @@
 
 .home-section-2__left{
     margin: var(--space-60) 0;
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.home-section-2__left.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .home-section-2__desc{

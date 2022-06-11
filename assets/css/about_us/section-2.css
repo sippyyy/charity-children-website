@@ -31,3 +31,14 @@
     max-width: 120px;
 
 }
+
+.section-2__container{
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.section-2__container.active{
+    transform: translateY(0);
+    opacity: 1;
+}

@@ -9,7 +9,18 @@
 .section-5__cover{
     background-color: var(--rgba-background);
     height: 100%;
-    padding: var(--space-60)
+    padding: var(--space-60);
+}
+
+.section__comment,.section__comment-home{
+    transform: translateY(20%);
+    opacity: 0;
+    transition: all 0.8s linear;
+}
+
+.section__comment.active,.section__comment-home.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .section-5__comment-block{
