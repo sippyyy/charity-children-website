@@ -35,6 +35,43 @@
     position: relative;
 }
 
+.causes__default-1{
+    animation: flowOn linear 0.4s;
+}
+
+.causes__default-2{
+    animation: flowOn linear 0.8s;
+}
+
+.causes__default-3{
+    animation: flowOn linear 1.2s;
+}
+
+
+.causes-1,.causes-2,.causes-3{
+    transform: translateY(30%);
+    opacity: 0;
+}
+
+.causes__group-2.active .causes-1{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.4s linear;
+}
+
+.causes__group-2.active .causes-2{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.8s linear;
+}
+
+.causes__group-2.active .causes-3{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1.2s linear;
+
+}
+
 .section__causes-img {
     width: 100%;
     height: 200px;

@@ -5,13 +5,13 @@
     background-color: var(--light-primary);
 }
 
-.section__title.volunteer__about-us{
+.section__title-volunteer{
     transform: translateY(20%);
     opacity: 0;
     transition: all 0.8s linear;
 }
 
-.section__title.volunteer__about-us.active{
+.section__title-volunteer.active{
     transform: translateY(0);
     opacity: 1;
 }

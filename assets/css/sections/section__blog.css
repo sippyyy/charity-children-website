@@ -1,3 +1,9 @@
+
+.blogs-1{
+    animation: flowOn linear 0.4s
+}
+
+
 .blog__block{
     background-color: #fff;
     position: relative;
