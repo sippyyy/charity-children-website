@@ -1,0 +1,9 @@
+@media (max-width: 740px){
+    .header{
+        background-color: #39311d;
+        height: 50px;
+        top:0;
+        padding: 0 10px;
+    }
+
+}

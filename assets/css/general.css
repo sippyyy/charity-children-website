@@ -61,3 +61,11 @@ input{
     border: 1px solid #6666;
     outline: none;
 }
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column-reverse{
+    flex-direction: column-reverse;
+}

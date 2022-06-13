@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/home/home-section__blog.css">
     <link rel="stylesheet" href="./assets/css/sections/section__blog.css">
+    <link rel="stylesheet" href="./assets/css/keyframe/keyframe.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" />
 
 
@@ -42,9 +44,9 @@
                 </a>
                 <div class="nav__list">
                     <a href="#" class="nav__list-item white">Home</a>
-                    <a href="./index2.html" class="nav__list-item">About</a>
-                    <a href="./index3.html" class="nav__list-item">Causes</a>
-                    <a href="./index4.html" class="nav__list-item">Blog</a>
+                    <a href="./about-us.html" class="nav__list-item">About</a>
+                    <a href="./causes.html" class="nav__list-item">Causes</a>
+                    <a href="./blog.html" class="nav__list-item">Blog</a>
                     <a href="./contact.html" class="nav__list-item">Contact</a>
                 </div>
             </div>
@@ -54,7 +56,7 @@
             <div class="home-section__cover">
                 <div class="grid wide">
                     <div class="row">
-                        <div class=" col l-6 m-6 c-6 white home-section__content">
+                        <div class=" col l-6 m-6 c-8 white home-section__content">
                             <p class="home-section__topic">Raising Hope</p>
                             <h2 class="home-section__title">To the Homeless & Hopeless People</h2>
                             <div class="home-section__links">
@@ -71,7 +73,7 @@
         <div class="home-section-2">
             <div class="home-section-2__cover">
                 <div class="grid wide">
-                    <div class="row">
+                    <div class="row home-form">
 
                         <div class="col l-7 m-6 c-12 home-section-2__left">
                             <p class="tag">WELCOME TO LOVECARE CHARITY</p>
@@ -103,7 +105,7 @@
 
                         <div class="col l-5 m-6 c-12">
                             <div class="form__cover">
-                                <div class="home-section-2_form">
+                                <form class="home-section-2_form">
                                     <div class="form__header">
                                         <img class="form__logo" src="./assets/img/logo.png" alt="">
                                         <p class="tag">FUNDS RAISED BY 1200 PEOPLE</p>
@@ -111,23 +113,25 @@
                                     <div class="form__body">
                                         <div class="form__part">
                                             <p class="tag form__heading">DONATE NOW</p>
-                                            <p class="form__message">Giving is the greatest act of grace</p>
+                                            <p class="form__introduce">Giving is the greatest act of grace</p>
                                         </div>
 
                                         <div class="form__part">
                                             <p class="tag form__heading">Your Full Name</p>
-                                            <input class="form__input" placeholder="Your Full Name" type="text">
+                                            <input id="fullname" class="form__input" placeholder="Your Full Name" type="text">
+                                            <p class="form__message"></p>
                                         </div>
 
                                         <div class="form__part">
                                             <p class="tag form__heading">Email Address</p>
-                                            <input class="form__input" placeholder="Email" type="text">
+                                            <input id="email" class="form__input" placeholder="Email" type="text">
+                                            <p class="form__message"></p>
                                         </div>
 
                                         <div class="form__part">
                                             <p class="tag form__heading">Select Causes</p>
                                             <div class="form__causes">
-                                                <p class="form__input">Food</p>
+                                                <input READONLY value="Food" id="type" class="form__input selection__result"></input>
                                                 <ul class="form__selections custom">
                                                     <li class="form__selection">Food</li>
                                                     <li class="form__selection">Money</li>
@@ -138,22 +142,24 @@
 
                                         <div class="form__part">
                                             <p class="tag form__heading">Amount to Give</p>
-                                            <input class="form__input" placeholder="Amount" type="text">
+                                            <input id="amount" class="form__input" placeholder="Amount" type="text">
+                                            <p class="form__message"></p>
                                         </div>
 
-                                        <div class="form__payment-options ">
+                                        <div class="form__payment-options form__part ">
                                             <div class="form__payment">
-                                                <input type="radio" id="paypal">
+                                                <input class="radio__input" name="payment" value="paypal" type="radio" id="paypal">
                                                 <label for="paypal">Paypal</label>
                                             </div>
                                             <div class="form__payment">
-                                                <input type="radio" id="creditcard">
+                                                <input class="radio__input" name="payment" value="credit" type="radio" id="creditcard">
                                                 <label for="creditcard">Credit Card</label>
                                             </div>
                                             <div class="form__payment">
-                                                <input type="radio" id="payoneer">
+                                                <input class="radio__input" name="payment" value="payoneer" type="radio" id="payoneer">
                                                 <label for="payoneer">Payoneer</lab>
                                             </div>
+                                            <p class="form__message"></p>
                                         </div>
 
                                         <div class="form__submit">
@@ -161,7 +167,7 @@
                                         </div>
 
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -745,5 +751,23 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./javascript/slider.js" ></script>
     <script src="./javascript/index.js"></script>
+    <script>
+        Validator({
+            form:'.home-section-2_form',
+            formGroupSelect:'.form__part',
+            errorSelector:'.form__message',
+            rules:[
+                Validator.isRequired('#fullname'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#amount'),
+                Validator.isNumber('#amount'),
+                // Validator.isRequired('.radio__input')
+            ],
+            onSubmit: (data)=>{
+                console.log(data)
+            }
+        })
+    </script>
 </body>
 </html>

@@ -109,42 +109,51 @@
     margin-bottom: 20px;
 }
 
-.form__message{
+.form__introduce{
     font-size: 2.3rem;
     font-family: var(--font-decor);
     color: #fff;
 }
-
-.form__part{
-
+.form__input.invalid {
+    border: 2px solid var(--yellow-primary)
 }
 
 .form__input{
     width: 100%;
     padding: 15px;
-    background-color: #433c29;
+    background-color: #433c29 !important;
     color:rgba(255,255,255,0.6);
-    border:none;
+    border:2px solid transparent;
     outline: none;
     z-index: 1;
 }
 
 .form__payment-options{
     display: flex;
-    margin-bottom: 20px;
 }   
 
 .form__payment{
     margin-right: 10px;
+    cursor: pointer;
 }
+
+.form__payment label{
+    cursor: pointer;
+}
+
 
 .form__payment input{
     margin-right: 5px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .form__causes{
     position: relative;
+}
+
+.selection__result{
+    cursor: pointer;
 }
 
 .form__selections{
@@ -154,11 +163,17 @@
     display: none;
 }
 
+.form__selections.active{
+    animation: flowDown linear 0.2s forwards alternate;
+    display:block;
+}
+
 .form__selection{
     width: 100%;
     display:flex;
     padding: 15px;
     align-items: center;
+    cursor: pointer;
 }
 
 .form__selection:hover{
@@ -180,5 +195,12 @@
     padding: 16px 24px;
     border-radius: var(--border-radius);
     font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.form__message{
+    color: var(--yellow-primary);
+    font-size:1.3rem;
 }
 
