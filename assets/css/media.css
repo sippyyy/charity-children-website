@@ -201,4 +201,12 @@
     .nav__button.active{
         border-radius: var(--border-radius);
     }
+
+    .section-3 {
+        padding: var(--space-60) 10px;
+    }
+
+    .section-4 {
+        padding: var(--space-60) 0;
+    }
 }

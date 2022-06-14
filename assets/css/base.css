@@ -63,6 +63,7 @@ h3{
 body{
     width: 100%;
     overflow-X: hidden;
+    /* overflow-y: overlay; */
     font-size: 1.2rem;
     line-height: 1.4;
     font-family: 'Montserrat', sans-serif;
