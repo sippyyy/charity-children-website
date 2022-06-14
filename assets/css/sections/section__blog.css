@@ -58,28 +58,9 @@
 }
 
 .blog__home-container{
-    transform: translateY(20%);
-    opacity: 0;
+    margin-bottom: 10px;
     transition: all 0.8s linear;
 }
 
-.blog__home-container.active.home__blog-1{
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.blog__home-container.active.home__blog-2{
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 1.8s linear;
-
-}
-
-.blog__home-container.active.home__blog-3{
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 2.8s linear;
-
-}
 
 

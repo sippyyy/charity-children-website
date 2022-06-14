@@ -25,15 +25,7 @@
     width: 100%;
     height: 300px;
     position: relative;
-    opacity: 0;
-    transform: rotateY(130deg) translateY(10%);
     transition: all 0.8s linear;
-}
-
-.section-4__block-cover.active{
-    opacity:1;
-    transform: rotateY(0deg) translateY(0);
-    
 }
 
 .section-4__block-cover:hover .section-4__block-body{
@@ -43,6 +35,10 @@
 
 .section-4__block-cover:hover .tag{
     color: #fff;
+}
+
+.section-4__block-cover:hover .volunteer__social-icon {
+    background-color: rgba(255,255,255,0.2);
 }
 
 .section-4__block-header{
@@ -85,4 +81,21 @@
 
 .volunteer__social{
     margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.volunteer__social-icon{
+    width: 25px;
+    height: 25px;
+    background-color: var(--yellow-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 1.2rem;
+}
+
+.volunteer__social-icon + .volunteer__social-icon{
+    margin-left: 4px;
 }

@@ -18,3 +18,21 @@ window.addEventListener("scroll",function(){
     }
 })
 
+const navBtn  = document.querySelector('.nav__button')
+const navBtnActive = document.querySelector('.nav__button.active')
+const navList = document.querySelector('.nav__list')
+
+navBtn.onclick=function(){
+    if( navBtn.classList.contains('active')){
+        navList.classList.remove('active')
+        navBtn.classList.remove('active')
+        navBtn.style.right = '0px'
+    }else{
+        navList.classList.add('active')
+        navBtn.classList.add('active')
+        navBtn.style.right = `${navList.offsetWidth}px`
+    }
+}
+
+
+

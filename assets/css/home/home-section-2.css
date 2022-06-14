@@ -8,14 +8,7 @@
 
 .home-section-2__left{
     margin: var(--space-60) 0;
-    transform: translateY(20%);
-    opacity: 0;
     transition: all 0.8s linear;
-}
-
-.home-section-2__left.active{
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .home-section-2__desc{
@@ -37,7 +30,7 @@
 
 .home-section-2__block{
     width: 100%;
-    padding: 20px;
+    padding: 25px 10px;
     background-color: #fff;
     border-radius: var(--border-radius);
     display: flex;
@@ -68,12 +61,14 @@
 }
 
 .home-section-2__block-name{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     font-family: var(--font-decor);
 }
 
 .home-section-2_form{
     margin-top: -96px;
+    transition: all 0.8s linear;
 }
 
 

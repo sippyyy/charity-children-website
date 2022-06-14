@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Nunito:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/about_us/section.css">
     <link rel="stylesheet" href="./assets/css/about_us/section-2.css">
     <link rel="stylesheet" href="./assets/css/about_us/section-3.css">
@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/button.css">
     <link rel="stylesheet" href="./assets/css/keyframe/keyframe.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" />
     <title>About Us</title>
 </head>
@@ -31,6 +33,7 @@
                 <a href="./index.html">
                     <img class="nav__logo" src="./assets/img/logo.png" />
                 </a>
+                <p class=" white nav__button"><i class="fa-solid fa-angle-left"></i></p>
                 <div class="nav__list">
                     <a href="./index.html" class="nav__list-item ">Home</a>
                     <a href="#" class="nav__list-item white">About</a>
@@ -82,32 +85,32 @@
                 </div>
                 <div class="section-3__content row">
                     
-                    <div class="section-3__block section-3__block-1  col l-3 m-6 c-6">
+                    <div class="section-3__block section-3__block-1 col l-3 m-6 c-6">
                         <div class="section-3__block-cover">
-                            <p class="section-3__icon white">Icon</p>
+                            <p class="section-3__icon white"><i class="fa-solid fa-hand-holding-heart"></i></p>
                             <p class="section-3__number white">$60M</p>
                             <p class="tag white opacity">FUND RAISED</p>
                         </div>
                     </div>
                     <div class="section-3__block section-3__block-2 col l-3 m-6 c-6">
                         <div class="section-3__block-cover">
-                            <p class="section-3__icon white">Icon</p>
-                            <p class="section-3__number white">$60M</p>
-                            <p class="tag white opacity">FUND RAISED</p>
+                            <p class="section-3__icon white"><i class="fa-solid fa-hands-holding-child"></i></p>
+                            <p class="section-3__number white">9,200</p>
+                            <p class="tag white opacity">COMPLETED PROJECTS</p>
                         </div>
                     </div>
                     <div class="section-3__block section-3__block-3 col l-3 m-6 c-6">
                         <div class="section-3__block-cover">
-                            <p class="section-3__icon white">Icon</p>
-                            <p class="section-3__number white">$60M</p>
-                            <p class="tag white opacity">FUND RAISED</p>
+                            <p class="section-3__icon white"><i class="fa-solid fa-hand-holding-dollar"></i></p>
+                            <p class="section-3__number white">5,800</p>
+                            <p class="tag white opacity">DONATION</p>
                         </div>
                     </div>
                     <div class="section-3__block section-3__block-4 col l-3 m-6 c-6">
                         <div class="section-3__block-cover">
-                            <p class="section-3__icon white">Icon</p>
-                            <p class="section-3__number white">$60M</p>
-                            <p class="tag white opacity">FUND RAISED</p>
+                            <p class="section-3__icon white"><i class="fa-solid fa-people-group"></i></p>
+                            <p class="section-3__number white">2,750</p>
+                            <p class="tag white opacity">VOLUNTEER</p>
                         </div>
                     </div>
                 </div>
@@ -123,8 +126,8 @@
                 </div>
                 <div class=" grid row">
 
-                    <div class="section-4__block col l-3 m-3 c-6">
-                        <div class="section-4__block-cover about_us">
+                    <div class="section-4__block col l-3 m-3 c-12">
+                        <div class="section-4__block-cover">
                             <div class="section-4__block-header">
                                 <img src="https://img.freepik.com/free-photo/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?w=2000" alt="">
                             </div>
@@ -132,15 +135,18 @@
                                 <p class="volunteer__name">Anne Hayes</p>
                                 <p class="tag">Volunteer</p>
                                 <div class="volunteer__social">
-                                    <p>Icon</p>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-google"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-instagram"></i></a>
                                 </div>
                                 <p class="volunteer__bio">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="section-4__block col l-3 m-3 c-6">
-                        <div class="section-4__block-cover about_us ">
+                    <div class="section-4__block col l-3 m-3 c-12">
+                        <div class="section-4__block-cover">
                             <div class="section-4__block-header">
                                 <img src="https://cdn.pixabay.com/photo/2017/07/29/18/24/portrait-2552312_1280.jpg" alt="">
                             </div>
@@ -148,15 +154,18 @@
                                 <p class="volunteer__name">Jason Smith</p>
                                 <p class="tag">Volunteer</p>
                                 <div class="volunteer__social">
-                                    <p>Icon</p>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-google"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-instagram"></i></a>
                                 </div>
                                 <p class="volunteer__bio">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="section-4__block col l-3 m-3 c-6">
-                        <div class="section-4__block-cover about_us ">
+                    <div class="section-4__block col l-3 m-3 c-12">
+                        <div class="section-4__block-cover">
                             <div class="section-4__block-header">
                                 <img src="https://img.freepik.com/free-photo/portrait-cheerful-caucasian-man_53876-13440.jpg?w=2000" alt="">
                             </div>
@@ -164,15 +173,18 @@
                                 <p class="volunteer__name">William Jackie</p>
                                 <p class="tag">Volunteer</p>
                                 <div class="volunteer__social">
-                                    <p>Icon</p>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-google"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-instagram"></i></a>
                                 </div>
                                 <p class="volunteer__bio">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="section-4__block col l-3 m-3 c-6">
-                        <div class="section-4__block-cover about_us ">
+                    <div class="section-4__block col l-3 m-3 c-12">
+                        <div class="section-4__block-cover">
                             <div class="section-4__block-header">
                                 <img src="https://assets.entrepreneur.com/content/3x2/2000/20190215114938-Funding-African-american-business-woman.jpeg?crop=4:3" alt="">
                             </div>
@@ -180,7 +192,10 @@
                                 <p class="volunteer__name">Walter Sara</p>
                                 <p class="tag">Volunteer</p>
                                 <div class="volunteer__social">
-                                    <p>Icon</p>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-google"></i></a>
+                                    <a href="#" class="volunteer__social-icon white"><i class="fa-brands fa-instagram"></i></a>
                                 </div>
                                 <p class="volunteer__bio">I am an ambitious workaholic, but apart from that, pretty simple person.</p>
                             </div>
@@ -336,5 +351,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./javascript/slider.js" ></script>
     <script src="./javascript/aboutUs.js"></script>
+    <script src="./javascript/animation.js"></script>
 </body>
 </html>

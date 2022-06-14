@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/button.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/about_us/section.css">
     <link rel="stylesheet" href="./assets/css/contact/section__contact.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.1.1-web/css/all.css">
     <link rel="stylesheet" href="./assets/css/keyframe/keyframe.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
     <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" />
     
     
@@ -28,6 +30,7 @@
                 <a href="./index.html">
                     <img class="nav__logo" src="./assets/img/logo.png" />
                 </a>
+                <p class=" white nav__button"><i class="fa-solid fa-angle-left"></i></p>
                 <div class="nav__list">
                     <a href="./index.html" class="nav__list-item">Home</a>
                     <a href="./about-us.html" class="nav__list-item">About</a>
@@ -79,31 +82,35 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form row">
+                    <form class="form row">
                         <div class="col l-4 m-12 c-12 ">
                             <div class="form__input-container">
-                                <input type="text" class="form__input" placeholder="Name">
+                                <input type="text" class="form__input" id="fullname" placeholder="Name">
+                                <p class="form__message yellow"></p>
                             </div>
                         </div>
                         <div class="col l-4 m-12 c-12">
                             <div class="form__input-container">
-                                <input type="text" class="form__input" placeholder="Email">
+                                <input type="text" class="form__input" id='email' placeholder="Email">
+                                <p class="form__message yellow"></p>
                             </div>
                         </div>
                         <div class="col l-4 m-4 c-6">
                             <div class="form__input-container">
-                                <input type="text" class="form__input" placeholder="Subject">
+                                <input type="text" class="form__input" id="subject" placeholder="Subject">
+                                <p class="form__message yellow"></p>
                             </div>
                         </div>
                         <div class="col l-12 m-12 c-12">
                             <div class="form__input-container">
-                                <textarea class="form__textarea" placeholder="Create a message here"></textarea>
+                                <textarea class="form__textarea form__input"  id="message" placeholder="Create a message here"></textarea>
+                                <p class="form__message yellow"></p>
                             </div>
                         </div>
                         <div class="form__button col l-4">
                             <button class="button white background-yellow">Send Message</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -168,5 +175,26 @@
             </div>
         </div>
     </div>
+    <script src="./javascript/animation.js"></script>
+    <script src="./javascript/validation.js"></script>
+    <script>
+        Validator({
+            form:'.form',
+            input:'.form__input',
+            errorSelector:'.form__message',
+            formGroupSelect:'.form__input-container',
+            rules:[
+                Validator.isRequired('#fullname'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#subject'),
+                Validator.isRequired('#message')
+            ],
+            onSubmit : (data)=>{
+                console.log(data)
+            }
+
+        })
+    </script>
 </body>
 </html>

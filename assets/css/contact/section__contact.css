@@ -65,6 +65,10 @@
     padding: 6px 12px;
 }
 
+.form__input.invalid {
+    border: 2px solid var(--yellow-primary);
+}
+
 ::placeholder{
     color: rgba(0,0,0,0.4)
 }

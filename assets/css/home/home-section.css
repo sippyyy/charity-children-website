@@ -32,6 +32,7 @@
 
 .home-section__links{
     font-size: 1.4rem;
+    display: flex;
 
 }
 
@@ -47,4 +48,6 @@
     border: 1px solid transparent;
     color: #fff;
     font-weight: 600;
+    display: flex;
+    align-items: center;
 }

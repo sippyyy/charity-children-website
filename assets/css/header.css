@@ -8,21 +8,49 @@
 }
 
 .navbar{
-    display: flex !important;
+    display: flex;
     justify-content: space-between;  
-    align-items: center;  
+    align-items: center;
 }
 
 .nav__logo{
     width:116px;
 }
 
+.nav__button{
+    font-size: 3rem;
+    width: 50px;
+    height: 50px;
+    background-color: var(--yellow-primary);
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    display: none;
+    animation: fromRight linear 0.4s forwards;
+    transition: all 0.4s linear;
+
+}
+
+.nav__button i{
+    transition: all 0.4s linear;
+}
+
+.nav__button.active i{
+    transform: rotateY(180deg)
+}
+
 .nav__list{
     width: 45%;
     display: flex;
     justify-content: space-between;
-    
+    transition: all 0.4s linear;
+}
 
+.nav__list.active{
+    transform: translateX(0);
 }
 
 .nav__list-item{

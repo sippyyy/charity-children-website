@@ -13,15 +13,10 @@
 }
 
 .section__comment{
-    transform: translateY(20%);
-    opacity: 0;
     transition: all 0.8s linear;
 }
 
-.section__comment.active{
-    transform: translateY(0);
-    opacity: 1;
-}
+
 
 .section-5__comment-block{
     padding: var(--padding-30);
@@ -54,6 +49,4 @@
     font-weight: 600;
 }
 
-.section-5__talker-job{
 
-}

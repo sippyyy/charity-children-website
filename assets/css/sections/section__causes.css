@@ -12,15 +12,9 @@
 
 .section__causes-container{
     padding: var(--space-60) 0;
-    opacity: 0;
-    transform: translateY(20%);
     transition: all 0.8s linear;
 }
 
-.section__causes-container.active{
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .section__causes-block-cover{
     background-color: #e9e4db;
@@ -47,30 +41,6 @@
     animation: flowOn linear 1.2s;
 }
 
-
-.causes-1,.causes-2,.causes-3{
-    transform: translateY(30%);
-    opacity: 0;
-}
-
-.causes__group-2.active .causes-1{
-    transform: translateY(0);
-    opacity: 1;
-    transition: all 0.4s linear;
-}
-
-.causes__group-2.active .causes-2{
-    transform: translateY(0);
-    opacity: 1;
-    transition: all 0.8s linear;
-}
-
-.causes__group-2.active .causes-3{
-    transform: translateY(0);
-    opacity: 1;
-    transition: all 1.2s linear;
-
-}
 
 .section__causes-img {
     width: 100%;

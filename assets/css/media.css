@@ -1,4 +1,180 @@
-@media (max-width: 740px){
+@media (min-width: 741px){
+    /* HOME */
+
+    .home-section-2__left{
+        margin: var(--space-60) 0;
+        transform: translateY(20%);
+        opacity: 0;
+        transition: all 0.8s linear;
+    }
+    
+    .home-section-2__left.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* SMALLEST ACT HOME */
+
+    .home-section-5__container{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    
+    .home-section-5__container.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* FUND RAISE */
+
+    .section-3__block{
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    
+    .section-3__cover{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    
+    .section-3__cover.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .section-3__cover.active .section-3__block-1{
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 0.8s ease-in-out;
+    }
+    
+    .section-3__cover.active .section-3__block-2{
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 1.8s ease-in-out;
+    }
+    
+    .section-3__cover.active .section-3__block-3{
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 2.8s ease-in-out;
+    }
+    
+    .section-3__cover.active .section-3__block-4{
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 3.8s ease-in-out;
+    }
+
+
+    /* CAUSES */
+
+    .section__causes-container{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    
+    .section__causes-container.active{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .causes-1,.causes-2,.causes-3{
+        transform: translateY(30%);
+        opacity: 0;
+    }
+    
+    .causes__group-2.active .causes-1{
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 0.4s linear;
+    }
+    
+    .causes__group-2.active .causes-2{
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 0.8s linear;
+    }
+    
+    .causes__group-2.active .causes-3{
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 1.2s linear;
+    
+    }
+
+
+    /* Comments */
+
+    .section__comment{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    
+    .section__comment.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+    /* VOLUNTEER */
+
+    .section-4__block-cover{
+        opacity: 0;
+        transform: rotateY(130deg) translateY(10%);
+    }
+    
+    .section-4__block-cover.active{
+        opacity:1;
+        transform: rotateY(0deg) translateY(0);
+    }
+
+    /* CARE CHILDREN */
+
+    .section-2__container{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    
+    .section-2__container.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /* BLOG */
+
+
+    .blog__home-container{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    
+    .blog__home-container.active.home__blog-1{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .blog__home-container.active.home__blog-2{
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 1.8s linear;
+    
+    }
+    
+    .blog__home-container.active.home__blog-3{
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 2.8s linear;
+    
+    }
+
+
+    
+}
+
+
+
+@media (max-width: 740px) and (min-width: 530px){
     .header{
         background-color: #39311d;
         height: 50px;
@@ -6,4 +182,23 @@
         padding: 0 10px;
     }
 
+}
+
+@media (max-width: 530px){
+    .nav__list{
+        transform: translateX(100%);
+        background-color: #39311d;
+        height: 50px;
+        align-items: center;
+        padding: 0 10px;
+        width: 70%;
+
+    }
+    .nav__button{
+        display: flex;
+    }
+
+    .nav__button.active{
+        border-radius: var(--border-radius);
+    }
 }
