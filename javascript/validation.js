@@ -12,6 +12,7 @@ function Validator(options){
             switch(inputElement.type){
                 case 'radio':
                     errorMessage = rules[i](formElement.querySelector(rule.selector + ':checked'))
+                    console.log(formElement.querySelector(rule.selector + ':checked'))
                     break;
                 default:
                     errorMessage = rules[i](inputElement.value)
