@@ -6,7 +6,8 @@
 
 html{
     font-size: 62.5%;
-    overflow-X: hidden;
+    width :100%
+    overflow-x: hidden;
 }
 
 :root{
@@ -29,6 +30,11 @@ html{
     --font-decor: 'Delius', cursive;
     --rgba-background:rgba(4,38,40,0.75);
     --text-color: #666666;
+}
+
+body{
+    width:100%;
+    overflow-x:hidden;
 }
 
 a{
